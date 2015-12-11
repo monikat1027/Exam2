@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Exam 2 Problem</title>
+<link rel="stylesheet" type="text/css" href="css/Exam2.css" />
+<script src="js/Exam2.js"></script>
+</head>
+
+<body>
+<h1>Exam 2 Problem</h1>
+<hr>
+<br>
+<select onchange="ShowMe()" id="selectsec">
+    <option selected=selected value="0">Please Select an Option</option>
+    <option value="1">Create Category</option>
+    <option value="2">Delete Category</option>
+    <option value="3">Update Category Description</option>
+    <option value="4">Get All Categories</option>
+    <option value="5">About</option>
+</select>
+<hr>
+<br>
+
+<section id="createsec" style="visibility:hidden">
+    <hr>
+    <br>
+<label>Please Enter a Category Name: </label>
+<input type="text" id="catname">
+<br>
+<label>Please enter the Category Description: </label>
+<input type="text" id="catdesc">
+<br>
+<button onclick="CreateCategory()" id="newcat">Add a New Category</button>
+<br>
+<br>
+<label id="create">The operation's result will display here.</label>
+</section>
+
+<section id="getsec" style="visibility:hidden">
+    <hr>
+    <br>
+    <button onclick="GetAllCategories()" id="getallcategories">Get All Categories</button>
+    <br>
+    <br>
+    <label id="categories">Display All Categories</label>
+</section>
+
+<section id="deletesec" style="visibility:hidden">
+    <hr>
+    <br>
+    <label>Please Enter a Customer ID: </label>
+<input type="text" id="delcatid">
+<label class="example">The Category ID is an integer</label>
+<br>
+<button onclick="DeleteCategory()" id="delcat">Delete Category</button>
+<br>
+<br>
+<label id="resultdel">The operation's result will display here.</label>
+</section>
+
+<section id="updatesec" style="visibility:hidden">
+<!--    <hr>
+    <br>-->
+<label>Please Enter a Category ID: </label>
+<input type="text" id="categoryid">
+<!--<label class="example"> The Category ID should be 5 numeric characters.</label>-->
+<br>
+<br>
+<label>Please Enter a Category Description:</label>
+<input type="text" id="categorydesc">
+<br>
+<br>
+<button onclick="UpdateCatDesc()" id="updatecategory">Update Category Description</button>
+<br>
+<br>
+<label id="resultupdate">The operation's result will display here.</label>
+</section>
+
+<section id="aboutsec" style="visibility:hidden">
+    <hr>
+    <br>
+    <label>Monica Washington</label>
+    <br>
+    <label>Exam 2 Problem</label>
+    <br>
+    <label>December 2015</label>
+</section>
+
+</body>
+</html>
+ 
